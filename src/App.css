@@ -1,58 +1,66 @@
-#candy-value {
-  color: #ff5656;
-}
-
-#main {
-  height: 100vh;
-  font-size: 19px;
+h1 {
+  margin-top: 40px;
   text-align: center;
 }
 
-h1 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+ul {
+  background-color: #1c1f2560;
+  height: 80vh;
+  border-radius: 30px;
+  padding: 30px 60px;
 }
 
-button {
+li {
+  padding: 10px 0px;
+  font-size: 18px;
+}
+
+#add-task-button {
+  display: flex;
+  place-items: center;
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  border: solid 2px #fff;
+  padding: 10px 10px;
+  border-radius: 100px;
+}
+
+#todo-form {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Itim', cursive;
-  letter-spacing: 1px;
-  border: solid 2px #ececec;
-  border-radius: 100px;
+  background-color: #1f232eef;
+  border: solid 4px #fff;
+  border-radius: 35px;
+  padding: 40px 20px;
+}
+
+#todo-input{
+  font-weight: 700;
+  border: solid 4px #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 200px;
+  font-size: 16px;
+}
+
+#todo-form button, #todo-submit {
+  display: flex;
   font-size: 15px;
-  padding: 10px 18px;
-  margin: 40px 10px;
-  background-color: #373a4efb;
-  color: #fff;
-  transition: all 0.3s;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 100px;
 }
 
-button:hover {
-  background-color: #474d68fb;
-  cursor: pointer;
-  box-shadow: #262836fb 1px 5px 10px;
+#todo-submit {
+  background-color: #5c689e;
 }
 
-button:active {
-  margin-top: 43px;
-}
-
-@media screen and (max-width: 800px) {
-  h1 {
-    font-size: 32px;
-    width: 200px;
-    top: 30%;
-  }
-
-  button {
-    top: 60%;
-    height: 45px;
-    width: 170px;
-    font-size: 15px;
-  }
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px 0px 10px;
 }
