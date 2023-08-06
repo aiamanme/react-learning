@@ -16,6 +16,7 @@ li {
 }
 
 #add-task-button {
+  cursor: pointer;
   display: flex;
   place-items: center;
   position: absolute;
@@ -48,6 +49,7 @@ li {
 }
 
 #todo-form button, #todo-submit {
+  cursor: pointer;
   display: flex;
   font-size: 15px;
   border: none;
